@@ -1,9 +1,10 @@
-@import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #361207;
+  --foreground: #B2FF4D;
+  --foreground-alt: #f7f7f7;
   --font-heading: 'Cormorant', serif;
   --font-body: 'Nunito', sans-serif;
 }
