@@ -1,6 +1,7 @@
 import HeroSection from "./components/HeroSection";
 import SectionNounou from "./components/SectionNounou";
 import SectionAssitants from "./components/SectionAssitants";
+import SectionPictures from "./components/SectionPictures";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <HeroSection />
       <SectionNounou />
       <SectionAssitants />
+      <SectionPictures />
     </main>
   );
 }

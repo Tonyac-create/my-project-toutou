@@ -13,7 +13,7 @@ export default function MenuNavigation({ setIsMenuOpen }: MenuNavigationProps) {
   const navigation = useMemo(() => [
     { name: "Accueil", href: "#hero" },
     { name: "Votre nounou", href: "#nounou" },
-    { name: "Photos & vidéos", href: "#videos" },
+    { name: "Photos & vidéos", href: "#pictures" },
     { name: "Nous trouver & contact", href: "#contact" },
   ], []);
 
