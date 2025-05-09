@@ -11,15 +11,17 @@ export default function NavBar() {
         <header className="bg-[var(--background)] fixed w-full top-0 z-50 pt-5 xl:py-5">
             <div className="px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center h-24">
-                    <Image
-                        src="/la_maison_de_toutou_resize.png"
-                        width={250}
-                        height={150}
-                        priority={true}
-                        quality={100}
-                        alt="Logo La maison de toutou"
-                        className="w-[150px] sm:w-[200px] md:w-[220px] lg:w-[250px] h-auto"
-                    />
+                    <h1>
+                        <Image
+                            src="/la_maison_de_toutou_resize.png"
+                            width={250}
+                            height={150}
+                            priority={true}
+                            quality={100}
+                            alt="La maison de toutou"
+                            className="w-[150px] sm:w-[200px] md:w-[220px] lg:w-[250px] h-auto"
+                        />
+                    </h1>
                     <nav className='hidden xl:flex space-x-8'>
                         <ul className='flex my-auto gap-11 text-2xl ml-auto text-center'>
                             <MenuNavigation setIsMenuOpen={setIsMenuOpen} />
@@ -38,7 +40,7 @@ export default function NavBar() {
                                     width={36}
                                     height={36}
                                     alt=""
-                                    className='w-6 h-6 md:w-9 md:h-9 transition-transform duration-400 rotate-90 hover:rotate-180 [filter:invert(88%)_sepia(31%)_saturate(1000%)_hue-rotate(41deg)_brightness(103%)_contrast(103%)]'
+                                    className='w-9 h-9 transition-transform duration-400 rotate-90 hover:rotate-180 [filter:invert(88%)_sepia(31%)_saturate(1000%)_hue-rotate(41deg)_brightness(103%)_contrast(103%)]'
                                 />
                             ) : (
                                 <Image
@@ -46,7 +48,7 @@ export default function NavBar() {
                                     width={36}
                                     height={36}
                                     alt=""
-                                    className='w-6 h-6 md:w-9 md:h-9 transition-transform duration-400 hover:scale-110 [filter:invert(88%)_sepia(31%)_saturate(1000%)_hue-rotate(41deg)_brightness(103%)_contrast(103%)]'
+                                    className='w-9 h-9 transition-transform duration-400 hover:scale-110 [filter:invert(88%)_sepia(31%)_saturate(1000%)_hue-rotate(41deg)_brightness(103%)_contrast(103%)]'
                                 />
                             )}
                         </button>

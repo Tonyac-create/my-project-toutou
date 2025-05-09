@@ -1,8 +1,11 @@
+import HeroSection from "./components/HeroSection";
+import SectionNounou from "./components/SectionNounou";
 
 export default function Home() {
   return (
-    <main>
-
+    <main className="px-4 sm:px-6 lg:px-8">
+      <HeroSection />
+      <SectionNounou />
     </main>
   );
 }
