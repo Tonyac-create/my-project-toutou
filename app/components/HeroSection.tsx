@@ -1,8 +1,9 @@
 import Image from "next/image";
+import Button from "./Button";
 
 export default function HeroSection() {
     return (
-        <section className="h-screen flex flex-col items-center justify-center mt-40 mb-20">
+        <section className="h-screen flex flex-col items-center justify-center mt-[16.25rem] mb-20">
             <div className="flex flex-row items-center gap-5 mb-6">
                 <Image
                     src="/maison_toutou.avif"
@@ -69,6 +70,15 @@ export default function HeroSection() {
             <p className="text-lg font-semibold mt-5 text-[var(--foreground)]">
                 {`Ouvert tous les jours à 12 min. de Belleville-en-Beaujolais`}
             </p>
+            <p className="text-lg mt-5 text-[var(--foreground-alt)]">
+                {`Renseignements ou réservations :`}
+            </p>
+            <span className="text-lg font-bold mt-5 text-[var(--foreground-alt)]">
+                {`06.80.32.26.10`}
+            </span>
+            <Button className="my-8">
+                Réserver maintenant
+            </Button>
         </section>
     )
 }

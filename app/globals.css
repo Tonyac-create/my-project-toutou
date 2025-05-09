@@ -44,3 +44,31 @@ h1, h2, h3, h4, h5, h6 {
     transform: translateY(-20px);
   }
 }
+
+@keyframes fadeInPaw {
+  0% {
+    opacity: 0;
+    transform: rotate(90deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(90deg);
+  }
+}
+
+.paw-animation {
+  opacity: 0;
+}
+
+.paw-animation.in-view {
+  animation: fadeInPaw 3s ease-out infinite;
+}
+
+.paw-animation.in-view:nth-child(1) { animation-delay: 0s; }
+.paw-animation.in-view:nth-child(2) { animation-delay: 0.4s; }
+.paw-animation.in-view:nth-child(3) { animation-delay: 0.8s; }
+.paw-animation.in-view:nth-child(4) { animation-delay: 1.2s; }
+
+.paw-container {
+  transform: rotate(-30deg);
+}
