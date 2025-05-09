@@ -3,8 +3,8 @@ import PattesPath from "./PattesPath";
 
 export default function SectionNounou() {
     return (
-        <section className="flex flex-col mb-20 pt-20">
-            <div className="flex flex-row items-center gap-5 mb-6">
+        <section id="nounou" className="flex flex-col mb-20 pt-20">
+            <div className="flex flex-row items-center gap-3 mb-6">
                 <Image
                     src="/niche.png"
                     width={50}
