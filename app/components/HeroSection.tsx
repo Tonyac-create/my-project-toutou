@@ -38,7 +38,7 @@ export default function HeroSection() {
             <p className="text-lg mt-5 text-[var(--foreground-alt)]">
                 {`Il sera à "La Maison de Toutou" comme il est chez vous.`}
             </p>
-            <div className="relative w-full max-w-4xl flex justify-between items-center mt-8">
+            <div className="relative w-full max-w-4xl flex justify-between items-center">
                 <div className="grid grid-cols-2 h-full gap-7">
                     <Image
                         src="/Os_vert.png"
