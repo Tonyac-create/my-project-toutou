@@ -1,5 +1,6 @@
 import Image from "next/image";
-import Button from "./Button";
+import Button from './Button'
+import Link from 'next/link';
 
 export default function HeroSection() {
     return (
@@ -77,9 +78,11 @@ export default function HeroSection() {
             <span className="text-lg font-bold mt-5 text-[var(--foreground-alt)]">
                 {`06.80.32.26.10`}
             </span>
-            <Button className="my-8">
-                Réserver maintenant
-            </Button>
+            <Link href="#contact" scroll={true}>
+                <Button className="my-8">
+                    Réserver maintenant
+                </Button>
+            </Link>
         </section>
     )
 }
