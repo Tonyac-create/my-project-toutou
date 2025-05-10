@@ -24,7 +24,7 @@ export default function SectionPictures() {
     };
 
     return (
-        <section id="pictures" className="flex flex-col pb-20">
+        <section id="pictures" className="flex flex-col pt-32">
             <div className="flex flex-row items-center gap-3 mb-6">
                 <Image
                     src="/icons/camera.svg"

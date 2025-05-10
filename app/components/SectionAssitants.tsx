@@ -10,7 +10,7 @@ export default function SectionAssitants() {
     const ghostRef = useRef(null);
 
     return (
-        <section className="flex flex-col mb-20">
+        <section className="flex flex-col mt-20">
             <div className="flex flex-row items-center gap-3 mb-6">
                 <Image
                     src="/icons/dog.svg"

@@ -3,7 +3,7 @@ import Button from "./Button";
 
 export default function HeroSection() {
     return (
-        <section id="hero" className="min-h-screen flex flex-col items-center justify-center pt-40 pb-20">
+        <section id="hero" className="min-h-screen flex flex-col items-center justify-center pt-40">
             <div className="flex flex-row items-center gap-5 mb-6">
                 <Image
                     src="/maison_toutou.avif"
