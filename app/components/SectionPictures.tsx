@@ -1,6 +1,7 @@
 'use client';
 
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from 'react';
 
 export default function SectionPictures() {
@@ -94,6 +95,20 @@ export default function SectionPictures() {
                         />
                     </div>
                 ))}
+            </div>
+            <div>
+                <Link href="https://www.facebook.com/frederique.viollet01140/videos" target="_blank" className="flex flex-row items-center gap-2 mt-8 text-[var(--foreground-alt)] hover:text-[var(--foreground)]">
+                    <Image
+                        src="/icons/Facebook.png"
+                        width={80}
+                        height={80}
+                        priority={true}
+                        quality={100}
+                        alt="Facebook"
+                        className="w-[80px] h-[80px] rounded-lg object-cover"
+                    />
+                    {`Retrouvez toutes nos vidéos et beaucoup d'autres photos sur notre page Facebook`}
+                </Link>
             </div>
         </section>
     )
