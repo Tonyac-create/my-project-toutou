@@ -23,7 +23,7 @@ export default function HeroSection() {
                         priority={true}
                         quality={100}
                         alt="Patte verte"
-                        className="w-[50px] h-[50px] object-cover rotate-45 absolute -bottom-4 right-5 animate-pulse"
+                        className="w-[50px] h-[50px] object-cover rotate-45 absolute -bottom-10 right-5 animate-pulse"
                     />
                 </div>
             </div>
@@ -65,6 +65,7 @@ export default function HeroSection() {
                     priority={true}
                     quality={100}
                     alt="Chien"
+                    className="updown"
                 />
             </div>
             <p className="text-lg font-semibold mt-5 text-[var(--foreground)]">
