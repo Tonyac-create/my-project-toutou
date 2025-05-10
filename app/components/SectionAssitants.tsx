@@ -33,7 +33,20 @@ export default function SectionAssitants() {
                     alt="Matcha"
                     className="w-[150px] h-[150px] rounded-full mb-6"
                 />
-                <p className="text-4xl font-bold font-heading text-[var(--foreground-alt)]">Matcha</p>
+                <div className="overflow-hidden">
+                    <p className={`text-4xl font-bold font-heading text-[var(--foreground-alt)] ${useInView(matchaRef) ? 'typewriter in-view' : ''}`}>Matcha</p>
+                </div>
+            </div>
+            <div className="mx-auto mb-4">
+                <Image
+                    src="/icons/upward-arrow.png"
+                    width={250}
+                    height={150}
+                    priority={true}
+                    quality={100}
+                    alt="Upward arrow"
+                    className="w-[100px] h-auto scale-x-[-1] -rotate-[70deg] pulse-scale"
+                />
             </div>
             <div ref={dianeRef} className={`flex flex-row-reverse items-center gap-5 slide-right ${useInView(dianeRef) ? 'in-view' : ''}`}>
                 <Image
@@ -46,9 +59,20 @@ export default function SectionAssitants() {
                     className="w-[150px] h-[150px] rounded-full mb-6"
                 />
                 <div className="flex flex-col gap-1">
-                    <p className="text-4xl font-bold font-heading text-[var(--foreground-alt)]">Diane</p>
+                    <p className={`text-4xl font-bold font-heading text-[var(--foreground-alt)] ${useInView(dianeRef) ? 'typewriter in-view' : ''}`}>Diane</p>
                     <p className="text-lg text-[var(--foreground)]">Ex-assistant</p>
                 </div>
+            </div>
+            <div className="mx-auto my-4">
+                <Image
+                    src="/icons/upward-arrow.png"
+                    width={250}
+                    height={150}
+                    priority={true}
+                    quality={100}
+                    alt="Upward arrow"
+                    className="w-[100px] h-auto rotate-[70deg] pulse-scale"
+                />
             </div>
             <div ref={ghostRef} className={`flex flex-row items-center gap-5 slide-left ${useInView(ghostRef) ? 'in-view' : ''}`}>
                 <Image
@@ -61,7 +85,7 @@ export default function SectionAssitants() {
                     className="w-[150px] h-[150px] rounded-full mb-6"
                 />
                 <div className="flex flex-col gap-1">
-                    <p className="text-4xl font-bold font-heading text-[var(--foreground-alt)]">Ghost</p>
+                    <p className={`text-4xl font-bold font-heading text-[var(--foreground-alt)] ${useInView(ghostRef) ? 'typewriter in-view' : ''}`}>Ghost</p>
                     <p className="text-lg text-[var(--foreground)]">Ex-assistant</p>
                 </div>
             </div>

@@ -1,18 +1,24 @@
 import { useEffect, useState, RefObject } from 'react';
 
 export function useInView(ref: RefObject<Element | null>) {
-    const [isInView, setIsInView] = useState(false);
+    const [hasBeenSeen, setHasBeenSeen] = useState(false);
 
     useEffect(() => {
         const observer = new IntersectionObserver(
             ([entry]) => {
-                setIsInView(entry.isIntersecting);
+                if (entry.isIntersecting) {
+                    setHasBeenSeen(true);
+                    // Une fois que l'élément a été vu, on arrête d'observer
+                    if (ref.current) {
+                        observer.unobserve(ref.current);
+                    }
+                }
             },
             { threshold: 0.1 }
         );
 
         const currentRef = ref.current;
-        if (currentRef) {
+        if (currentRef && !hasBeenSeen) {
             observer.observe(currentRef);
         }
 
@@ -21,7 +27,7 @@ export function useInView(ref: RefObject<Element | null>) {
                 observer.unobserve(currentRef);
             }
         };
-    }, [ref]);
+    }, [ref, hasBeenSeen]);
 
-    return isInView;
+    return hasBeenSeen;
 }
